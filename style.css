@@ -1,0 +1,216 @@
+:root{
+    --white: #fff8f0;
+    --black:rgb(36, 32, 33);
+    --orange: rgb(242, 107, 34);
+
+    --swiper-navigation-color: rgb(242, 107, 34); /* Colore delle freccette di navigazione */
+    --swiper-pagination-color: rgb(242, 107, 34); /* Colore dei punti di paginazione */
+}
+
+
+
+/* Colori Background */
+.bg-white-custom{
+    background-color: var(--white);
+}
+
+.bg-black-custom{
+    background-color: var(--black);
+}
+
+.bg-orange-custom{
+    background-color: var(--orange);
+}
+
+
+/* Colori Testo */
+.text-white-custom{
+    color: var(--white);
+}
+
+.text-black-custom{
+    color: var(--black);
+}
+
+.text-orange-custom{
+    color: var(--orange);
+}
+
+
+/* FONT */
+.font_primary{
+    font-family: "Great Vibes", cursive;
+}
+
+.font_secondary{
+    font-family: "Baskervville SC", serif;
+}
+
+
+/* BACKGROUND */
+.bg-container{
+    background-color: var(--black);
+}
+
+/* NAVBARS */
+/* Container Navbars */
+.containerNav{
+    z-index: 3;
+}
+/* First Navbar */
+.firstNav{
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    border-bottom: 4px solid var(--orange);
+    background-color: var(--black);
+    
+}
+
+.img-nome{
+    width: 570px;
+    height: 74px;
+    padding-top: 1px;
+}
+
+
+/* Second Navbar */
+.navbar-logo-custom{
+    width: 60px;
+    object-fit: contain;
+}
+
+.secondNav{
+    margin-top: 101px;
+    transform: translateY(-100px);
+    border-bottom: 4px solid var(--orange);
+    box-shadow: 2px 2px 20px 10px var(--black);
+    transition: 0.25s;
+    z-index: 2;
+    background-color: var(--black);
+}
+
+
+/* HEADER */
+.header-custom{
+    margin-top: 78px;
+    padding-left: 180px;
+    height: calc(100vh - 78px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.425)), url(./media/pizza2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-motto{
+    margin-top: 300px;
+    letter-spacing: 8px;
+    font-size: 70px;
+}
+
+
+/* MAIN */
+
+/*La mia storia */
+.storia{
+    border-bottom: 3px solid var(--orange) ;
+}
+
+/* Immagine menu */
+.img-menu{
+    width: 1500px;
+    object-fit: cover;
+}
+
+
+/* Carosello */
+.h1-galleria{
+    border-top: 3px solid var(--orange) ;
+}
+
+.img-swiper{
+    height: 800px;
+    width: 1500px;
+}
+
+
+/* FOOTER */
+/* Contatti */
+.h1-contatti{
+    border-top: 3px solid var(--orange);
+}
+
+.diritti{
+    border-top: 2px solid var(--orange);
+}
+
+@media only screen and (max-width: 600px) {
+    .img-nome{
+        padding-top: 3.5px;
+        width: 300px;
+        height: 60px;
+    }
+    
+    .li-nav{
+        margin-left: 0.9rem !important;
+        margin-right: 0.4rem !important;
+        padding-top: 7px;
+    }
+
+    .header-custom{
+        padding-left: 20px;
+    }
+    
+    .header-motto{
+        font-size: 40px;
+        margin-top: 160px;
+        justify-content: center;
+    }
+
+    .img-swiper{
+        padding-top: 3px;
+        height: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 760px) and (orientation: landscape) {
+    .img-nome{
+        padding-top: 3.5px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .secondNav .row {
+        flex-direction: row !important; /* Disporre i gruppi in fila */
+    }
+
+    .secondNav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .li-nav{
+        margin-left: 1.3rem !important;
+        margin-right: 0.4rem !important;
+    }
+
+    .nav-oriz{
+        padding-top: 0px;
+        margin-bottom: 2px; 
+    }
+
+    .header-motto {
+        margin-top: 55px;
+        font-size: 33px;
+    }
+
+    .img-swiper{
+        padding-top: 2px;
+        height: 280px;
+        object-fit: scale-down;
+    }
+}
